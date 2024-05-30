@@ -71,6 +71,7 @@ Entire home/apts and private rooms dominate across all neighbourhood groups. On 
 **4. What is the number of listings per neighbourhood?**
 
 <img width="587" alt="Screenshot 2024-05-30 at 14 57 47" src="https://github.com/slcnyrnc/2023-NYC-Airbnb-Analysis/assets/167687192/47834ef4-1c9a-4505-a899-d20171537427">
+
 <img width="419" alt="Screenshot 2024-05-30 at 14 52 37" src="https://github.com/slcnyrnc/2023-NYC-Airbnb-Analysis/assets/167687192/68381dac-703b-4402-8c17-e25f42c6d633">
 
 - Number of listing are mostly gathered in the center of NYC in Manhattan and Brooklyn and together they consist of the 80% of the listings of NYC.
@@ -103,41 +104,44 @@ To test the hypotheses I conducted a linear regression:
 - No of reviews: Slope value shows us negative relationship meaning that as number of reviews rises, prices slightly drops.
 <img width="634" alt="Screenshot 2024-05-30 at 14 34 55" src="https://github.com/slcnyrnc/2023-NYC-Airbnb-Analysis/assets/167687192/a23780c4-be27-4caa-9ef4-8ef777adfa5e">
 
+
 - Availability: Slope value shows us a positive relationship meaning that as an accomodation has more availability, prices slightly increase.
 <img width="681" alt="Screenshot 2024-05-30 at 14 35 28" src="https://github.com/slcnyrnc/2023-NYC-Airbnb-Analysis/assets/167687192/21a7ab9d-ef87-4c84-a5af-da5f0cfa9a84">
+
 
 - Min Nights: Slope value shows us a noticable negative relationship meaning that as required minimum stay has increases, prices slightly decrease.
 <img width="658" alt="Screenshot 2024-05-30 at 14 35 52" src="https://github.com/slcnyrnc/2023-NYC-Airbnb-Analysis/assets/167687192/a2ecb2bd-bf6e-4523-858b-09ad36b7b3c6">
 
 However, the results show that none of the linear models represented by the regression line covered all of the data points and the nature of the relationship between the variables is not very clear.
 
-In summary, none of the results were a good predictor of the price of listing, that a regression is definetly not the best model to represent this data and can’t accurately predict the influence of the selected variables on the price of a listing. Therefore I need to try another approach to test my hypotheses.
+In summary, none of the results were a good predictor of the price of listing, that a regression is definetly not the best model to represent this data and can’t accurately predict the influence of the selected variables on the price of a listing. Therefore I needed to try another approach to test my hypotheses.
 
 **Clustering Analysis (Unsupervised Machine Learning)**
 
 <img width="986" alt="Screenshot 2024-05-30 at 14 39 37" src="https://github.com/slcnyrnc/2023-NYC-Airbnb-Analysis/assets/167687192/f11d1219-11db-4a5e-bef7-8cac59d4c7cf">
 
-Neighbourhood Boroughs (1=Manhattan, 2=Brooklyn, 3=Queens, 4=The Bronx, 5=Staten Island):
+
+**Neighbourhood Boroughs** (1=Manhattan, 2=Brooklyn, 3=Queens, 4=The Bronx, 5=Staten Island):
 - Most entries in the clusters 'green' and 'red' are from Manhattan.
 - For 'black' and 'gray', the median is 2.0, indicating a significant presence of Brooklyn in this cluster.
 
-Room Types (1=Entire home/apt, 2=Private room, 3=Shared room, 4=Hotel room):
+**Room Types** (1=Entire home/apt, 2=Private room, 3=Shared room, 4=Hotel room):
 - All clusters have predominantly Entire home/apts.
 
-No of Reviews:
+**No of Reviews:**
 - Clusters 'green' have many listings with few to no reviews.
 - Clusters 'black' and 'gray' has the highest number of reviews showing more engagement.
 
-Availability:
+**Availability:**
 - Clusters 'gray' and 'green' show high availability throughout the year meaning these listings are available for the majority of the year.
 - Cluster 'red' has a significant difference between mean and median which could mean that some listings with very high availability skewing the average.
 - Cluster 'black' has the lowest availability
 
-Min Nights:
+**Min Nights:**
 - Cluster 'black' and 'red' have high median minimum nights, suggesting longer stay requirements.
 - Cluster 'green' has a low median minimum night requirement, indicating more flexibility for short stays.
 
-Price:
+**Price:**
 - Cluster 'red' has the highest mean and median prices, indicating premium or luxury listings.
 - Cluster 'green' also shows high prices but significantly lower than red cluster.
 - Cluster 'black' and 'gray' have relatively lower prices, with 'black' cluster being the most affordable.
