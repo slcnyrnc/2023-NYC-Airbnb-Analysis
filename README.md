@@ -12,7 +12,7 @@ In this project, I will analyze the Airbnb New York City data from 2023 and see 
 
 Airbnb is a platform that allows house and apartment owners to rent their properties to guests for short-term stays.
 
-This public dataset was accessed from Kaggle (https://www.kaggle.com/datasets/godofoutcasts/new-york-city-airbnb-2023-public-data/data) on May 5 and the original source can be found on InsideAirbnb website. Inside Airbnb is an independent, non-commercial set of tools and data that allows us to explore how Airbnb is really being used in cities around the world. By analyzing publicly available information about a city’s Airbnb’s listings, Inside Airbnb provides filters and key metrics so we can see how Airbnb is being used to compete with the residential housing market.
+This public dataset was accessed from [Kaggle](https://www.kaggle.com/datasets/godofoutcasts/new-york-city-airbnb-2023-public-data/data) on May 5 and the original source can be found on InsideAirbnb website. Inside Airbnb is an independent, non-commercial set of tools and data that allows us to explore how Airbnb is really being used in cities around the world. By analyzing publicly available information about a city’s Airbnb’s listings, Inside Airbnb provides filters and key metrics so we can see how Airbnb is being used to compete with the residential housing market.
 
 ## METHODOLOGY
 - Sourcing open data
@@ -182,4 +182,4 @@ Each cluster serves distinct market segments, from moderate and accessible accom
 
 ## VISUALISATIONS
 
-The business case with extra visualizations for this project can be found in Tableau Public: <LINK>
+The business case with extra visualizations for this project can be found in [Tableau Public](https://public.tableau.com/views/NYCAirbnb_17172564892450/Story1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
